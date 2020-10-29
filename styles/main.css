@@ -1,5 +1,14 @@
+@font-face {
+    font-family: varela-round;
+    src: url(../assets/VarelaRound-Regular.ttf);
+  }
+  h1 {
+    font-family: varela-round;
+  }
 .wrapper {
+    margin-right: 20px;
     display: flex;
+    place-content: space-evenly;
 }
 .semi-left {
     border: dotted;
@@ -26,15 +35,29 @@
     width: 300px;
     height: 100px;
     border-radius: 60px;
-    border:solid black;
+    background-color: aquamarine;
 
 }
+.main-topic-left::after {
+    content: "";
+    position: absolute;
+    top: 43%;
+    z-index: -1;
+    right: -7%;
+    margin-left: -5px;
+    border-style: solid;
+    border-color: transparent transparent transparent aquamarine;
+    border-bottom-width: 7px;
+    border-top-width: 7px;
+    border-left-width: 20px;
+  }
 .main-topic-right {
     width: 100px;
     height: 200px;
     border-radius: 20px;
 }
 .topic-name {
+    font-family: varela-round;
     padding: 38;
 }
 
