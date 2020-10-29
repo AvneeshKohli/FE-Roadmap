@@ -6,18 +6,21 @@
     font-family: rubik;
     src: url(../assets/Rubik-Regular.ttf);
   }
+  body {
+      background-color: azure;
+  }
   h1 {
     font-family: varela-round;
   }
 .wrapper-odd {
-    margin-right: 20px;
+    margin-right: 15.7em;
     display: flex;
-    place-content: space-evenly;
+    justify-content: space-evenly;
 }
 .wrapper-even {
-    margin-right: 20px;
+    margin-left: 15.7em;
     display: flex;
-    place-content: space-evenly;
+    justify-content: space-evenly;
 }
 .semi-left {
     border: dotted;
@@ -67,7 +70,7 @@
     width: 300px;
     height: 100px;
     top: 5em;
-    left: 10em;
+    right: 10em;
     border-radius: 60px;
     background-color: rgb(127, 200, 255);
 }
@@ -116,6 +119,7 @@
     font-family: rubik;
     position: relative;
     top: 5.5em;
+    height: fit-content;
 }
 .step-number {
     margin: 0;
