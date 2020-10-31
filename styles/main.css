@@ -8,6 +8,7 @@
   }
   body {
       background-color: #a7defd;
+      overflow-x: hidden;
   }
   .color-1 {
     background-color: #00adb4;
@@ -40,11 +41,17 @@
     margin-right: 15.7em;
     display: flex;
     justify-content: space-evenly;
+    opacity:0;
+    transform: translateX(-25%);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in;
 }
 .wrapper-even {
     margin-left: 15.7em;
     display: flex;
     justify-content: space-evenly;
+    opacity:0;
+    transform: translateX(25%);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in;
 }
 .semi-left {
     border: dotted;
@@ -189,4 +196,9 @@
     font-size: 2em;
     font-family: rubik;
 
+}
+
+.bring-into-view {
+  opacity: 1;
+  transform: translateX(0);
 }
