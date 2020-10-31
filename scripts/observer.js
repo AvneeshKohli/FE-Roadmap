@@ -23,9 +23,3 @@ wrappersEven.forEach(wrapper => {
 wrappers.forEach(wrapper => {
     observer.observe(wrapper);
 })
-
-
-
-window.onload = function settingView() {
-    window.scrollTo(0,0)
-}
