@@ -3,8 +3,8 @@ const wrappers = document.querySelectorAll('.wrapper-odd')
 const wrappersEven = document.querySelectorAll('.wrapper-even')
 const options = {
     root: null,
-    threshold: 0.25,
-    rootMargin: "-150px 0px -150px 0px"
+    threshold: 0.2,
+    rootMargin: "-75px 0px"
 };
 
 const observer = new IntersectionObserver(function(entries,observer) {
